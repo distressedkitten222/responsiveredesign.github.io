@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="main.css" />
+
+<html>
+
+    <head>
+        <title>Responsive Redesign</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,700;1,700&display=swap');
+        </style>
+    </head>
+
+    <body>
+
+        <h1>Responsive Redesign of Hopkinton RI Website</h1>
+        
+        <div class="row">
+
+            <div class="column1a">
+                <h2>Overview</h2>
+            </div>
+
+            <div class="column2">
+                <p>
+                    <span style="color:rebeccapurple; font-style:italic; color:rebeccapurple">Objective</span>: 
+                    To conduct a responsive redesign of an existing website with usability issues. 
+                    This includes analyzing the current interface, creating low-fidelity and high-fidelity prototypes for multiple screen sizes, and building the new responsive website. 
+                </p>
+                <!--<p><span style="color:rebeccapurple; font-weight:550; color:rebeccapurple">Role</span>: Designer, Developer</p>-->
+            </div>
+
+        </div>
+
+        <div class="row">
+            
+            <div class="column1b">
+                <h2>Webpage to Redesign</h2>
+            </div>
+
+            <div class="column2">
+                <a href="https://www.hopkintonri.org/" style="color:rebeccapurple; font-style: italic;">Current Website: Hopkinton RI</a>
+                <br>
+                <img src="old_site.png" class="current-site">
+                <p>
+                    I chose this website's homepage because, despite its largely informational and navigational purpose, the information in it
+                    is completely unorganized, with no clear layout, hierarchy, or flow.
+                </p>
+    
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="column1a">
+                <h2>Usability Evaluation</h2>
+            </div>
+            <div class="column2">
+
+                <p>First, I identified major usability issues, most of which <span style="color: rebeccapurple; font-style: italic">decrease efficiency, learnability, AND memorability</span>:</p>
+
+                <ul class="usability-list">
+                    <li class="usability-main-point">
+                        <span style="font-style: italic">No clear layout or organization</span> of information into sections, so it's difficult for users to find what they want. <!--- this leads to poor efficiency, learnability, and memorability.-->
+                    </li>
+                    <li class="usability-main-point">
+                       <span style="font-style: italic">Crowded text</span>, similarly making it difficult to identify key points.
+                    </li>
+                    <li class="usability-main-point">
+                        Many <span style="font-style: italic">redundant and overlapping elements</span>, overwhelming the user without purpose.
+                        <ul>
+                            <li class="usability-sub-point">Multiple menus with overlapping menu items, decreasing efficiency and learnability.</li>
+                            <li class="usability-sub-point">Two Departments menus with identical content, decreasing efficiency.</li>
+                        </ul>
+                    </li>
+                    <li class="usability-main-point">
+                        UI elements are used in <span style="font-style: italic">unfamiliar and unintuitive</span> ways, decreasing learnability and memorability.
+                        <ul>
+                            <li class="usability-sub-point">A dropdown menu of 'links' at a random location - a user choosing from this doesn't expect the page to immediately change.</li>
+                            <li class="usability-sub-point">Text is underlined but isn't clickable, despite underlined text using indicating a link.</li>
+                        </ul>
+                    </li>
+                    <li class="usability-main-point">
+                        <span style="font-style: italic">Inconsistent links</span>.
+                        <ul>
+                            <li class="usability-sub-point">Links have different fonts, sizes, colours, and styles, decreasing learnability and memorability.</li>
+                            <li class="usability-sub-point">Not all links have hover states, so it's easy to miss them - this decreases efficiency, learnability, and memorability.</li>
+                            <li class="usability-sub-point">Image links lack labels/alternative text, decreasing learnability as users aren't sure where they lead.</li>
+                            <li class="usability-sub-point">One link doesn't have a target, decreasing efficiency.</li>
+                        </ul>
+                    </li>
+                    <li class="usability-main-point">
+                        The menu dropdowns have <span style="font-style: italic">small font</span>, decreasing learnability.
+                    </li>
+                    <li class="usability-main-point">
+                        The page is <span style="font-style: italic">not responsive</span> - on smaller screens, the entire page becomes small and difficult to read.
+                    </li>
+                    
+
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="column1b">
+                <h2>Accessibility Evaluation</h2>
+            </div>
+            
+            <div class="column2">
+
+                <p>Second, I used WebAIM WAVE to detect a number of <span style="color:rebeccapurple; font-style: italic;">accessibility issues</span>. Major ones include:</p>
+                <ul>
+                    <li class="wave-point">A lack of page regions, headings, and structural elements that aid navigation.</li>
+                    <li class="wave-point">Links that don't or incorrectly indicate their location.</li>
+                    <li class="wave-point">Images without alternative text, including linked images.</li>
+                </ul>
+
+                <p>The accessibility issues detected follow a major theme of the usability issues - <span style="font-style: italic;">difficulty navigating</span>, both in the page and to other pages. It seems that
+                    the lack of structure and consistency is an issue not just visually but also for screen readers, making the page quite inaccessible in multiple
+                    ways.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="column1a">
+                <h2>Lo-Fi Wireframes</h2>
+            </div>
+
+            <div class="column2">
+                <p>Third, I created <span style="color:rebeccapurple; font-style: italic;">low-fidelity wireframes</span> for a laptop, tablet, and phone.</p>
+
+                <div class="lofi">
+                    <img class="lofi-header" src="laptop.jpg">
+                    <img class="lofi-frame" src="lo_fi_laptop.jpg">
+                    <img class="lofi-header" src="tablet.jpg">
+                    <img class="lofi-frame" src="lo_fi_tablet.jpg">
+                    <img class="lofi-header" src="phone.jpg">
+                    <img class="lofi-frame" src="lo_fi_phone.jpg">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="column1b">
+                <h2>Style Guide</h2>
+            </div>
+
+            <div class="column2">
+                <p>Fourth, I created a <span style="color:rebeccapurple; font-style: italic;">style guide</span>.</p>
+
+                <img src="final-style-guide.svg" class="style-guide">
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="column1a">
+                <h2>Hi-Fi Wireframes</h2>
+            </div>
+
+            <div class="column2">
+                <p>Fifth, I created <span style="color:rebeccapurple; font-style: italic;">high-fidelity wireframes</span> for a laptop, tablet, and phone.</p>
+                <br>    
+            
+                <h4>Laptop</h4>
+                <img src="laptop-hifi.svg" class="laptop-hifi">
+                <br>
+
+                <h4>Tablet</h4>
+                <img src="final-tablet-hifi.svg" class="tablet-hifi">
+                <br>
+
+                <h4>Phone</h4>
+                <img src="final-phone-hifi.svg" class="phone-hifi">
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="column1b">
+                <h2>Responsive Redesign</h2>
+            </div>
+
+            <div class="column2">
+                <a href="https://distressedkitten222.github.io/hopkintonri.github.io/" style="color:rebeccapurple; font-style:italic;">Redesigned Webpage for Hopkinton RI</a>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="column1a">
+                <h2>Learning</h2>
+            </div>
+
+            <div class="column2">
+                <p>This project taught me a lot, but I won't make you read all of what I learned. These are my main takeaways:</p>
+                <ul>
+                    <li>Seemingly small changes can have drastic effects on an interface's usability - things as small as underlining vs. not underlining text.</li>
+                    <li>I can make a responsive website now! :D</li>
+                </ul>
+            </div>
+
+        </div>
+        
+
+    </body>
+
+</html>
